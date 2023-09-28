@@ -33,20 +33,26 @@ createApp ({
         }
       ],
       counter: 0,
+      flag: false,
     }
 
   },
 
   methods:{
+    
     start(){
+      
       setInterval( () => {
-        console.log(this.counter++);
-        if(this.counter === this.images.length){
-          this.counter = 0;
+        if(this.flag){
+          console.log(this.counter++);
+          if(this.counter === this.images.length){
+            this.counter = 0;
+          }
         }
-        
       },1000);
+    
     }
+
   },
 
   mounted(){
