@@ -43,39 +43,6 @@ main{
   text-align: right;
 }
 
-.hide{
-  display: none;
-}
-
-.arrow{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  cursor: pointer;
-  z-index: 2;
-}
-
-#arrow-top{
-  left: 88%;
-  top: 15px;
-}
-
-#arrow-bot{
-  left: 88%;
-  bottom: 15px;
-}
-
-.arrow:hover{
-  background-color: rgba(255, 255, 255, 0.8);
-  color: crimson;
-}
-
 .mini-img{
   display: flex;
   flex-direction: column;
