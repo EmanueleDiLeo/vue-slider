@@ -55,11 +55,11 @@
         <!-- START MINI IMG -->
         <div class="mini-img"> 
           <img
-            v-for="{image, index} in images"
+            v-for="(images, index) in images"
             @click="counter = index"
             :class= "{'active': index === counter}"
-            :src="image.image"
-            :alt=""
+            :src="images.image"
+            :alt="images.title"
           >        
         </div>
         <!-- END MINI IMG -->
